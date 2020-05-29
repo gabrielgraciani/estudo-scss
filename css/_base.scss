@@ -25,8 +25,12 @@ $colors: (azul: blue, vermelho: red, amarelo: yellow);
   .#{$key}-text{color: $color;}
 }
 
-body{background: #7159c1; color: $text-color}
+.flex{display:flex; align-items:center; justify-content:center;}
+
+body{@extend .flex; flex-direction:column; background: #7159c1; color: $text-color;}
 
 .container{@include box-shadow(#000); background: white;
-  span{@include box-shadow(#000); @include text-effect(danger);background:gray;}
+  span{@include box-shadow(#000); @include text-effect(danger);background:gray;
+    &:hover{color:blue;}
+  }
 }
