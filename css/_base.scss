@@ -1,0 +1,32 @@
+$text-color: orange;
+
+@mixin box-shadow($color){
+  box-shadow:2px 2px 4px -2px $color;
+}
+
+@mixin text-effect($val){
+  @if $val == danger {
+    color: red;
+  }
+  @else if $val == alert {
+    color: yellow;
+  }
+  @else {
+    color: black;
+  }
+}
+
+@for $i from 1 through 5 {
+  .text-#{$i}{font-size: 15px * $i;}
+}
+
+$colors: (azul: blue, vermelho: red, amarelo: yellow);
+@each $key, $color in $colors {
+  .#{$key}-text{color: $color;}
+}
+
+body{background: #7159c1; color: $text-color}
+
+.container{@include box-shadow(#000); background: white;
+  span{@include box-shadow(#000); @include text-effect(danger);background:gray;}
+}

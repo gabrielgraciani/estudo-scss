@@ -1,0 +1,50 @@
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.azul-text {
+  color: blue;
+}
+
+.vermelho-text {
+  color: red;
+}
+
+.amarelo-text {
+  color: yellow;
+}
+
+body {
+  background: #7159c1;
+  color: orange;
+}
+
+.container {
+  -webkit-box-shadow: 2px 2px 4px -2px #000;
+          box-shadow: 2px 2px 4px -2px #000;
+  background: white;
+}
+
+.container span {
+  -webkit-box-shadow: 2px 2px 4px -2px #000;
+          box-shadow: 2px 2px 4px -2px #000;
+  color: red;
+  background: gray;
+}
+/*# sourceMappingURL=main.css.map */
